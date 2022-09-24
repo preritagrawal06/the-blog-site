@@ -28,6 +28,11 @@ body{
   
 }
 
+.menuIcon{
+  display: none;
+  cursor: pointer;
+}
+
 .navbar h1{
   font-size: 40px;
   letter-spacing: 1px;
@@ -36,6 +41,10 @@ body{
 .navbar a:hover{
   color: #00ADB5;
   transition: 0.5s;
+}
+
+#toggle{
+  display: none;
 }
 
 .content{
@@ -176,3 +185,47 @@ body{
   transition: 0.5s;
   cursor: pointer;
 }
+
+
+@media only screen and (max-width:600px){
+  .blog-preview{
+    width: 80vw;
+  }
+  .menu{
+    display: none;
+    background-color: #393E46;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    height: 90vh;
+  }
+  .menuIcon{
+    display: inline-block;
+  }
+  
+  .navbar{
+    justify-content: space-between;
+    padding: 20px 35px;
+  }
+  .navbar h1{
+    font-size: 30px;
+  }
+  .home h2{
+    font-size: 36px;
+  }
+  .menu a{
+    display: block;
+    margin: 30px;
+  }
+  #toggle:checked + .menu{
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
